@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<head>
+<title>Edit Profile</title>
+</head>
+    <body>
+        <h1>Edit Profile</h1>
+        <form method="POST">
+        Name
+        <input type="text" name="name" value="{{ student.name }}">
+        <br><br>
+        Department
+        <input type="text" name="department" value="{{ student.department }}">
+        <br><br>
+        Resume Path
+        <input type="text" name="resume" value="{{ student.resume }}">
+        <br><br>
+        <button type="submit">Update</button>
+        </form>
+    </body>
+</html>

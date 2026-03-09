@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create Placement Drive</title>
+    <meta charset="UTF-8">
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 600px; margin: 50px auto; }
+        label { display: block; margin: 10px 0 5px; font-weight: bold; }
+        input, textarea { width: 100%; padding: 8px; margin-bottom: 10px; box-sizing: border-box; }
+        textarea { height: 100px; }
+        button { background: #007bff; color: white; padding: 10px 20px; border: none; cursor: pointer; }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <h1>Create Placement Drive</h1>    <form method="POST">
+        <label for="drive_name">Drive Name:</label>
+        <input type="text" id="drive_name" name="drive_name" required>
+
+        <label for="job_title">Job Title:</label>
+        <input type="text" id="job_title" name="job_title" required>
+
+        <label for="job_description">Job Description:</label>
+        <textarea id="job_description" name="job_description" required></textarea>
+
+        <label for="salary">Salary:</label>
+        <input type="text" id="salary" name="salary" placeholder="e.g., 5-10 LPA">
+
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" placeholder="e.g., Chennai">
+
+        <label for="deadline">Deadline:</label>
+        <input type="date" id="deadline" name="deadline" min="2026-03-10" required>
+
+        <button type="submit">Create Drive</button>
+        <a href="/company_dashboard" style="margin-left: 10px; text-decoration: none;"><button type="button">Back</button></a>
+    </form>
+</body>
+</html>
